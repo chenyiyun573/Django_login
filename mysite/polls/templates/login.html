@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>登录 Login</title>
+</head>
+<body>
+<form action="/polls/index/"method="post">
+    {% csrf_token %}
+    <p>登录 Login</p>
+    <p><label>用户名 username:</label><input name="username"></p>
+    <p><label>密码 password:</label><input name="password"></p>
+    <input type="submit" value="提交 submit">
+    <input type="button" value="注册 register" onclick="javascrtpt:window.location.href='./toregister'">
+</form>
+</body>
+</html>

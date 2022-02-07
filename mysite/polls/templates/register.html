@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>注册 Register</title>
+</head>
+<body>
+<form action="/polls/register/"method="post">
+    {% csrf_token %}
+    <p>请填写以下信息以注册账户 Please fill in the following information to register your account</p>
+    <p><label>用户名 username:</label><input name="username">必填 Required</p>
+    <p><label>密码 password:</label><input name="password">必填 Required</p>
+    <p><label>电子邮箱 email:</label><input name="email"></p>
+    <p><label>手机号码 phone_number:</label><input name="phone"></p>
+    <input type="submit" value="提交 submit">
+    <input type="button" value="登录 login" onclick="javascrtpt:window.location.href='../'">
+</form>
+</body>
+</html>
